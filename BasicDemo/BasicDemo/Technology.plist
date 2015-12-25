@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>group</key>
+		<string>多线程</string>
+		<key>friends</key>
+		<array>
+			<string>NSThread</string>
+			<string>pthread</string>
+			<string>GCD</string>
+			<string>NSOperation</string>
+		</array>
+	</dict>
+	<dict>
+		<key>group</key>
+		<string>网络</string>
+		<key>friends</key>
+		<array>
+			<string>NSURLConnection</string>
+			<string>NSURLSession</string>
+		</array>
+	</dict>
+	<dict>
+		<key>group</key>
+		<string>数据存储</string>
+		<key>friends</key>
+		<array>
+			<string>NSKeyedArchiver</string>
+			<string>NSUserDefaults</string>
+			<string>writeToFile</string>
+			<string>SQLite</string>
+			<string>CoreData</string>
+		</array>
+	</dict>
+	<dict>
+		<key>group</key>
+		<string>第三方库</string>
+		<key>friends</key>
+		<array>
+			<string>SDWebImage</string>
+			<string>AFNetworking</string>
+			<string>FMDB</string>
+			<string>MBProgressHUD</string>
+		</array>
+	</dict>
+</array>
+</plist>

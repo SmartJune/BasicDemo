@@ -1,0 +1,42 @@
+//
+//  PrefixHeader.pch
+//  BasicDemo
+//
+//  Created by 马俊炎 on 15/12/15.
+//  Copyright © 2015年 马俊炎. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//category
+#import "UIBarButtonItem+item.h"
+#import "UIImage+image.h"
+#import "UIView+Extension.h"
+
+//singleton
+#import "singleton.h"
+
+// 颜色
+#define JYColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// 随机色
+#define JYRandomColor JYColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+// 全局背景色
+#define JYGlobalBg JYColor(255, 128, 0)
+
+// 是否为iOS7
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+// cell之间的间距
+#define JYStatusCellMargin 10
+
+// cell的内边距
+#define JYStatusCellInset 10
+
+
+#endif /* PrefixHeader_pch */
